@@ -11,8 +11,8 @@
               </h3>
             </div>
 
-            <form class="mt-20">
-              <%= form_for(@post_image, url: post_images_path) do |f| %>
+            <!-- <form class="mt-20"> -->
+              <%= form_for(@post_image) do |f| %>
                   <% if @post_image.errors.any? %>
                     <div id="error_explanation">
                       <h2><%= @post_image.errors.count %>件のエラーが発生しました。</h2>
@@ -48,7 +48,7 @@
                   <hr>
                   <%= f.submit "送信", class:"btn btn-lg btn-block btn-base-1 mt-20" %>
                 <% end %>
-            </form>
+            <!-- </form> -->
           </div>
         </div>
       </div>
